@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% block title %}<title>Районный совет Тараклии</title>{% endblock %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../static/boots/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- Добавление статического CSS файла -->
+  {% load static %}
+ <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  {% block head %}
+     <div class="nazv">
+         <img src="{% static 'images/logotip.png' %}" style="height:150px;"  align="absmiddle">
+        <h1>Районный совет Тараклия</h1>
+          <a href="index.html"><img src="{% static 'images/gerb1.jpg' %}" style="height:150px;"  align="absmiddle">
+      </div>
+  {% endblock %}
+</head>
+
+        <div class="nav nav-justified">
+        <li class="nav-item">
+                <a class="nav-link.active " href="#">Главная</a> </li>
+
+            <li class="nav-item">
+                <a class="nav-link.active " href="#">Район Тараклия</a>
+              <ul>
+                <li class="nav-item">
+                    <a class="nav-link.active " href="#">Паспорт Района</a></li>
+                <li class="nav-item">
+                    <a class="nav-link.active " href="#">Символика</a></li>
+                <li class="nav-item">
+                    <a class="nav-link.active" href="#">Примэрии</a></li>
+                <li class="nav-item">
+                    <a class="nav-link.active" href="#">Туризм</a></li>
+                <li class="nav-item">
+                    <a class="nav-link.active" href="#">Инвестиции</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link.active " href="#">Новости</a>
+            <ul>
+              <li class="nav-item">
+                  <a class="nav-link.active" href="#">Объявления</a></li>
+              <li class="nav-item">
+                  <a class="nav-link.active" href="#">COVID-19</a></li>
+              <li class="nav-item">
+                  <a class="nav-link.active" href="#">Вакансии</a></li>
+            </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link.active" href="#">Районный совет</a>
+            <ul>
+                <li class="nav-item" >
+                    <a class="nav-link.active" href="#">Председатель</a></li>
+                <li class="nav-item">
+                    <a class="nav-link.active" href="#">Секретарь</a></li>
+                <li class="nav-item">
+                    <a class="nav-link.active" href="#">Советники района</a></li>
+                <li class="nav-item">
+                    <a class="nav-link.active" href="#">Специализированные комисии</a></li>
+            </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link.active" href="#">Администрация</a>
+            <ul>
+                <li class="nav-item">
+                    <a class="nav-link.active" href="#">Руководство</a></li>
+                <li class="nav-item">
+                    <a class="nav-link.active" href="#">Аппарат председателя</a></li>
+                <li class="nav-item">
+                    <a class="nav-link.active" href="#">Децентрализованные службы</a></li>
+                <li class="nav-item">
+                    <a class="nav-link.active" href="#">Деконцентрированные службы</a></li>
+            </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link.active" href="#">Документы</a>
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link.active" href="#">Распоряжения</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link.active" href="#">Решение&nbspрайонного совета</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link.active" href="#">КЧС</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link.active" href="#">Гос. закупки</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link.active" href="#">Планы и отчёты</a></li>
+                </ul>
+                </li>
+            <li class="nav-item">
+                <a class="nav-link.active" href="#">Контакты</a></li>
+            <li class="nav-item">
+                <a class="nav-link.active" href="#">Язык</a>
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link.active" href="#">Русский</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link.active" href="#">Български</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link.active" href="#">Română</a></li>
+                </ul>
+                </li>
+
+          </li>
+
+            <div class="footer-dark">
+        <footer>
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-sm-5 col-md-1 item">
+                        <img src="../static/images/lev.png" alt="lev" height="150px">
+                        </div>
+
+                    <div class="col-sm-5 col-md-3 item">
+                        <h3>Адрес</h3>
+                        <ul>
+                            <li>Районный совет Тараклия</li>
+                            <li>Республика Молдова</li>
+                            <li><a href="#">MD-7401 Тараклия, Штефан чел Маре, 59</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-5 col-md-3 item">
+                        <h3>Контакты</h3>
+                        <ul>
+                            <li>Приемная: +373(294)24-6-50</li>
+                            <li>E-mail:</li>
+                            <li><a href="#">anticamera-rs@mail.ru</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 item text">
+                        <h3>Полезные контакты:</h3>
+                        <ul>
+                            <li>Службы экстренных вызовов - 112</li>
+                            <li>Антикоррупция - 22 504-504</li>
+                            <li>Справочная служба - 1181</li>
+                        </ul>
+                    </div>
+            </div>
+            <p>Районный совет Тараклия © 2022. Все права защищены</p>
+        </div>
+        </footer>
+    </div>
